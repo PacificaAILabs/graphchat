@@ -6,11 +6,6 @@ headers:
     request:
       - propagate:
           matching: .*
-preview_connectors:
-  subgraphs:
-    connector:
-      $config:
-        stripe: ${env.STRIPE_API_KEY}
 
 persisted_queries:
   enabled: true

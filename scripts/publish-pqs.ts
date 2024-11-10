@@ -25,15 +25,15 @@ function publish() {
       "persisted-queries",
       "publish",
       APOLLO_GRAPH_REF,
-      "--manifest",
-      "operation-manifest.json",
+      "--manifest", "operation-manifest.json",
+      "--profile", "default"
     ],
     {
       stdio: "inherit",
       cwd: graphDir,
       env: {
         "APOLLO_KEY": APOLLO_KEY
-      }
+      },
     }
   );
 }
